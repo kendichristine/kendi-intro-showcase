@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kendi Christine | Frontend Developer</title>
+  <style>
+    :root {
+      --bg-color: #f8fafc;
+      --text-color: #1e293b;
+      --muted-color: #475569;
+      --accent-color: #2563eb;
+      --accent-hover: #1d4ed8;
+      --white: #ffffff;
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      line-height: 1.6;
+    }
+
+    .hero {
+      max-width: 720px;
+      width: 100%;
+      text-align: center;
+      background-color: var(--white);
+      padding: 3rem 2rem;
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.02em;
+    }
+
+    .hero .subtitle {
+      font-size: 1.25rem;
+      color: var(--accent-color);
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero p {
+      font-size: 1.125rem;
+      color: var(--muted-color);
+      margin-bottom: 2rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: var(--accent-color);
+      color: var(--white);
+      text-decoration: none;
+      padding: 0.875rem 2rem;
+      border-radius: 9999px;
+      font-size: 1rem;
+      font-weight: 600;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .btn:hover {
+      background-color: var(--accent-hover);
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 600px) {
+      .hero {
+        padding: 2rem 1.25rem;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .hero .subtitle {
+        font-size: 1.1rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="hero">
+    <h1>Kendi Christine</h1>
+    <p class="subtitle">Frontend Developer</p>
+    <p>
+      "I am a Chemical Engineering graduate building my skills in frontend development and creating simple, responsive and user-friendly web experiences."
+    </p>
+    <a href="#projects" class="btn">View My Projects</a>
+  </main>
+</body>
+</html>
